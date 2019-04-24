@@ -1,0 +1,27 @@
+package cs61B;
+import java.io.*;
+
+public class pro2 {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+        BufferedReader keyboard=new BufferedReader(new InputStreamReader(System.in));
+        String str;
+        str=keyboard.readLine();
+        char[] c=new char[str.length()];//creates a new char type array
+        c=str.toCharArray();//transfer a string type to charArray,c is a string type
+        for(int i=0;i<str.length();i++)
+        {
+            if(i==1){
+            	i=i+1;
+        		System.out.print(c[i]); 
+            }
+            else
+            {
+            	System.out.print(c[i]);
+            }
+        }
+	}
+}
+ 

@@ -1,0 +1,20 @@
+import java.io.*;
+
+public class pro2 {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String readLine = br.readLine();
+		//char[] chars = readLine.toCharArray();
+		int len = readLine.length();
+		if(len <= 2) {
+			System.out.println("the input string length should be longer than 2.");
+		} else {
+			String newStr = readLine.substring(0,1) + readLine.substring(2);
+			System.out.print(newStr);
+		}
+	}
+} 
+ 
